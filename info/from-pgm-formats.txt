@@ -1,0 +1,4 @@
+pgmtofs
+pgmtolispm
+pgmtopbm
+pgmtoppm
