@@ -10,10 +10,10 @@ Run `apt install netpbm`.
 ## Demos
 
 Demo #1:
-[demo image #1](./demos/art.jpg)
+![demo image #1](./demos/art.jpg)
 
 Demo #2:
-[demo image #2](./demos/scale.jpg)
+![demo image #2](./demos/scale.jpg)
 
 Demo #3:
 ```text
