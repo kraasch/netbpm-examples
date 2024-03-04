@@ -1,23 +1,27 @@
 
 all:
-	make my
+	make clean
+	make art
 	make simple
 	make scale
+	make view
 
-my:
-	mkdir -p ./output
-	pnmscale -xsize 100 ./examples/my.ppm > ./output/abc
-	pnmtopng -compression 0 ./output/abc > ./output/xyz
-	sxiv ./output/xyz
-	rm ./output/abc ./output/xyz
+art:
+	pnmscale -xsize 100 ./examples/my.ppm > ./output/temp
+	pnmtopng -compression 0 ./output/temp > ./output/art.jpg
 
 simple:
 	pbmtoascii ./examples/letter.pbm
 
 scale:
 	pnmscale -xsize 100 ./examples/color.ppm > ./output/example.scaled
-	ppmtojpeg ./output/example.scaled > ./output/abc.jpg
-	sxiv ./output/abc.jpg
-	rm -f ./output/example.scaled
-	rm -f ./output/abc.jpg
+	ppmtojpeg ./output/example.scaled > ./output/scale.jpg
+
+clean:
+	rm -rf ./output
+	mkdir -p ./output
+
+view:
+	sxiv ./output/art.jpg
+	sxiv ./output/scale.jpg
 

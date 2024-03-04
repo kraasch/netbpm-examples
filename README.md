@@ -7,7 +7,24 @@ Convert text files to images or ascii graphics.
 
 Run `apt install netpbm`.
 
-## meta
+## Demos
+
+Demo #1:
+[demo image #1](./demos/art.jpg)
+
+Demo #2:
+[demo image #2](./demos/scale.jpg)
+
+Demo #3:
+```text
+pbmtoascii ./examples/letter.pbm
+    M
+    M
+    M
+"ooo"
+```
+
+## Meta
 
  - https://en.wikipedia.org/wiki/Netpbm
  - https://stackoverflow.com/questions/56713882/how-to-use-pnmscale-to-scale-the-longer-side-of-an-image-and-still-keep-the-rati
