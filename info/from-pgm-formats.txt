@@ -1,4 +1,0 @@
-pgmtofs
-pgmtolispm
-pgmtopbm
-pgmtoppm
